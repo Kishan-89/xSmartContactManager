@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title th:text="${user.name+' Dashboard'}"></title>
+</head>
+<body>
+	
+	<section id="dashboardsec" class="text-center" style=" height:93vh;background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/wow1.jpg); background-size: cover; color:white;">
+	
+	          <div style="visibility: hidden">I am hidden</div>
+            <div style="visibility: hidden">I am hidden</div>
+	<h3>Welcome <span th:text="${user.name}"></span>,</h3>
+	<p>Start collecting your contacts in a very smarter way. We
+					provide very efficient and smarter way of handling contacts</p>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!-- this is base file which will be inherited to all the templates  -->
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <title th:text="${title}">Hello</title>
+  </head>
+  <body>
+    
+    <!-- lets's make a common navbar -->
+    
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-primary">
+  <a class="navbar-brand text-white font-weight-bold" href="#" th:href="@{/}">Smart Contact Manager</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-uppercase">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" th:href="@{/about}">Why our contacts? <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#" th:href="@{/signin}">Log in <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" th:href="@{/signup}">Sign Up <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+    
+    <div th:replace="${content}"></div>
+    
+<div >
+
+  <!-- Footer -->
+  <footer
+          class="text-lg-start text-white "
+          style="background:linear-gradient(black,rgba(0,0,0,0.7))"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="p-3"
+             
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with me on social networks:</span>
+        
+         <span class="ml-4">
+       
+      
+       
+        <a href="https://www.instagram.com/_kishan22/" class="text-white me-4 p-2" target="_blank">
+          <i class="fa fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kishan-singh-96a687183/" class="text-white me-4 p-2" target="_blank">
+          <i class=" fa fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Kishan-89" class="text-white me-4 pl-2" target="_blank">
+          <i class=" fa fa-brands fa-github"></i>
+        </a>
+      </span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+     
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="container">
+     
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-2"
+         style="background-color:linear-gradient(black,rgba(0,0,0,0.7))"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="#"
+         >SmartContactManager.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</div>
+<!-- End of .container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script  th:src="@{/js/script.js}" ></script>
+  </body>
+</html>

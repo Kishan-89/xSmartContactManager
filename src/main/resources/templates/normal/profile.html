@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${user.name+' Dashboard'}"></title>
+</head>
+<body>
+
+	<section>
+
+		<div class="container">
+
+
+			<div class="card text-center mt-5 ">
+			
+			<div style="margin-top:5vh;" class="container text-center">
+			<img style="height: 200px; width: 200px;" class="my-profile-pic"
+						src="" th:src="@{'/images/'+${user.imageUrl}}" alt="Profile"></div>
+			
+			<h1 class="mt-1"th:text="${user.name}"></h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">User Id</th>
+						<th scope="row" th:text="${'SCM2022'+user.u_Id}"></th>
+
+                       
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="col">Email</th>
+						<td th:text="${user.email}"></td>
+
+					</tr>
+					<tr>
+						<th scope="col">Role</th>
+						<td th:text="${user.role}"></td>
+
+					</tr>
+					<tr>
+						<th scope="col">Account active</th>
+						<td th:text="${user.enabled}"></td>
+					</tr>
+					<tr>
+						<th scope="col">About</th>
+						<td th:utext="${user.about}"></td>
+					</tr>
+
+				</tbody>
+			</table>
+			 <div class="container mt-1">  <a class="btn btn-primary btn-sm "style="text-decoration:none; display:block;" href="#" th:href="@{/user/update-user/}">Update</a>
+			   
+			    </div>		
+			
+			</div>
+			
+		</div>
+
+	</section>
+
+</body>
+</html>

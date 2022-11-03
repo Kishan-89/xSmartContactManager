@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+<title>Home Page!</title>
+</head>
+<body>
+
+	<section style="color: white;">
+		<div
+			class="home-section d-flex align-items-center justify-content-center">
+			<div class="text-center ">
+				<h1 class="font-weight-bold text-secondary">
+					Welcome <span th:text="${user.name}"></span>,
+				</h1>
+				<p>Start collecting your contacts in a very smarter way. We
+					provide very efficient and smarter way of handling contacts</p>
+
+			</div>
+		</div>
+		<div>
+			<footer> </footer>
+		</div>
+	</section>
+</body>
+</html>

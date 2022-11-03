@@ -1,0 +1,196 @@
+body{
+	background:#e2e2e2;
+	box-sizing: border-box;
+	margin:0;
+	color:black;
+	
+}
+.sidebar-user{
+	
+	background:#e2e2e2;
+}
+.nav-link:hover{
+	background: #000000;
+	font-family: 'Ubuntu', sans-serif;
+}
+.bg-primary{
+	background:#009680 !important;
+}
+.home-section{
+	
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/bgh.jfif);
+	width: 100%;
+	height:79vh;
+	color:white;
+	
+	
+}
+.my-card{
+	
+	padding:20px;
+	background:#ffffff;
+}
+.signup{
+	
+	
+	background-size: contain;
+	
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  min-height:400px;
+  max-height: auto;
+  border: 1px solid #9C9C9C;
+  background-color: white;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+/* .user-container{
+	
+	display:flex;
+}
+.sidebar-user {
+	
+	
+	width:18%;
+	height:100vh;
+	background-color:white;
+	padding-top: 10px;
+	
+}
+
+.sidebar-user a{
+	
+	display:block;
+	
+	padding: 10px 20px;
+	text-decoration:none;
+	color:green;
+}
+
+.sidebar-user .divider{
+	height: .5px;
+	width:100%;
+	background:#e2e2e2;
+	margin-top:3px;
+}
+
+@media only screen and (max-width:600px){
+	
+	.user-container{
+	  display:block;
+    }
+	.sidebar-user {
+	
+	
+	width:100%;
+	height:auto;
+	padding-top: 10px;
+	}
+	.sidebar-user a{
+	
+	text-align:center;
+	}
+	
+ .content-user{
+	margin:2% 0 0 0;
+	
+}
+
+.cross-btn{
+	
+	display:none;
+}
+
+}
+
+.sidebar-user a:hover{
+	
+	background: #e2e2e2;
+}
+
+.content-user{
+	margin-left:2%;
+	width:80%;
+	
+}
+.cross-btn{
+	
+	width:30px;
+	height:30px;
+}
+.sidebar-user .cross-btn{
+	
+	position: relative;
+	top:0;
+	right:10px;
+	font-size:30px;
+	cursor:pointer;
+	margin-left:80%;
+} */
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+ 
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.my-profile-pic{
+	
+	height:50px;
+	width:50px;
+	object-fit:cover;
+	
+	border-radius:40%;
+}
+
+/* this is for search functionality */
+
+.search-container{
+	
+	position:relative;
+}
+
+.search-result{
+	
+	position:absolute;
+	background:white;
+	z-index: 999;
+	width:100%;
+	border:1px solid gray;
+	box-shadow: 7px 7px 5px black;
+	display :none;
+}
