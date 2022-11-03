@@ -72,7 +72,7 @@ npm install
 <br/>
 npm start
 <br/>
-npm start
+
 <br/>
 Open http://localhost:8080 to view it in the browser.
 
